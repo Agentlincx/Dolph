@@ -33,6 +33,21 @@ div, a {
     scrollbar-width: none;
 }
 
+
+@media only screen and (orientation: landscape) {
+  video {
+    width: 100vw !important;
+  }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width:768px) {
+  video {
+    height: 100vh !important;
+  }
+}
+
+
 /*med*/
 @media screen and (min-width:768px) {
     html {
@@ -88,9 +103,6 @@ div, a {
         width: 200px;
     }
 
-    video {
-        width: 100% !important;
-    }
 }
 
 
@@ -312,6 +324,7 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     z-index: -100;
 }
 
