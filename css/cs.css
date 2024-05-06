@@ -51,7 +51,7 @@ div, a {
 /*medium*/
 @media screen and (min-width:768px) {
     html {
-        font-size: .5vw;
+        font-size: .2vw;
     }
 
     #snav {
@@ -452,8 +452,9 @@ canvas {
 }
 
 #p1 a {
-    padding: .7em 2em;
+    padding: .4em 2em;
     border-radius: 10px;
+font-size: .8em;
 }
 
 #p1 a:first-of-type {
