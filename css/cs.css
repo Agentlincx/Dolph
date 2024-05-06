@@ -113,11 +113,16 @@ div, a {
         transform: translate(-50%);
         height: 108vh;
     }
+    
+    #tok {
+      padding-bottom: 15em !important;
+    }
 
     #piechart {
         position: relative;
         top: 6em;
-        transform: scale(1.5, 1.5);
+        transform: scale(1.7, 1.7) translateX(50%);
+        left: -50%;
     }
 
     #partn>div img {
