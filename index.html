@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Dolph</title>
+        <link rel="stylesheet" href="./font/css/all.css" />
+        <link rel="stylesheet" href="./css/cs.css" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="./img/ima.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="." />
+        <meta name="author" content="lincx ace" />
+        <meta name="copyright" content="" />
+        <meta name="designer" content="lincx ace" />
+        <meta name="rating" content="General" />
+        <meta name="distribution" content="Global" />
+        <meta name="coverage" content="worldwide" />
+
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script
+            src="./js/main.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </head>
+
+    <body>
+        <div id="snav">
+            <div id="nav">
+                <div>
+                    <img src="./img/ima.png" alt="" />
+
+                    <span></span>
+                </div>
+
+                <div onclick="nav()">
+                    <span id="a1"></span>
+                    <span id="a2"></span>
+                </div>
+            </div>
+
+            <div id="navl">
+                <img src="./img/ima.png" alt="" />
+                <div>
+                    <!-- item -->
+                </div>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="lnav">
+            <div id="nav">
+                <div>
+                    <img src="./img/ima.png" alt="" />
+                </div>
+
+                <div>
+                    <!-- item -->
+                </div>
+            </div>
+        </div>
+
+            <video autoplay muted loop>
+                <source src="./img/bac.mp4" type="video/mp4" />
+            </video>
+        <div id="yy">
+            fj
+        </div>
+
+        <div id="p1">
+            <img src="./img/ima.png" alt="" />
+            <div>
+                <h1>DOLPH</h1>
+                <p>The smart catch in crypto marketing!</p>
+                <div>
+                    <a href="">Buy</a>
+                    <a href="">Chart</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="add">CA :- </div>
+
+        <div id="p2">
+            <h1>About Dolph</h1>
+            <div>
+                <canvas id="orb"></canvas>
+                <p>
+                    DOLPH is the fin-tastic crypto meme project that's making
+                    waves in the blockchain ocean!. Dolph is more than just a
+                    cute face - it's a revolutionary new way to swim through the
+                    world of marketing services.
+                </p>
+                <p>
+                    In a sea of boring, corporate marketing campaigns, Dolph is
+                    a breath of fresh air. Our project combines the power of
+                    cryptocurrency with the humor and creativity of internet
+                    memes, all while providing a suite of cutting-edge marketing
+                    services to help your project thrive.
+                </p>
+                <p>
+                    With Dolph, you'll have access to a team of expert
+                    marketers, designers, and writers who will help you craft a
+                    marketing strategy that's tailored to your unique needs.
+                    From social media management to content creation, our team
+                    will work with you to create a campaign that's both
+                    effective and entertaining.
+                </p>
+                <p>
+                    But that's not all - our token, $DOLPH, also rewards holders
+                    with exclusive access to our meme library, where you can
+                    find the funniest, most relatable memes to share with your
+                    friends and followers. And, as our community grows, so does
+                    the value of $DOLPH, giving you a chance to be a part of
+                    something truly special.
+                </p>
+                <p>
+                    So why settle for a boring, traditional marketing agency
+                    when you can ride the wave of the future with Dolph? Join
+                    our community today and discover the power of meme-based
+                    marketing for yourself!
+                </p>
+            </div>
+        </div>
+
+        <div id="tok">
+            <h1>Dolphnomics</h1>
+            <div>
+                <div class="tok"></div>
+                <div id="piechart"></div>
+            </div>
+        </div>
+
+        <div id="road">
+            <h1>RoadMap</h1>
+            <div></div>
+        </div>
+
+        <div id="partn">
+            <h1>Partners</h1>
+            <div></div>
+        </div>
+
+        <div id="foot">
+            <div class="soc"></div>
+            <div>copyright &copy; 2024 DOLPH. All Rights Reserved</div>
+        </div>
+
+        <div id="fot">
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <script
+            src="./js/main.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Task", "%"],
+                    ["Presale", 40],
+                    ["Liquidity", 40],
+                    ["Burn", 10],
+                    ["Marketing/Development", 10]
+                ]);
+
+                var options = {
+                    title: "",
+                    width: 250,
+                    height: 150,
+                    is3D: true,
+                    backgroundColor: '#95CCE1',
+                };
+
+                var chart = new google.visualization.PieChart(
+                    document.getElementById("piechart")
+                );
+                chart.draw(data, options);
+            }
+        </script>
+
+        <script defer src="./js/anim.js" type="module" charset="utf-8"></script>
+        <script type="text/javascript" charset="utf-8"></script>
+        <script type="module">
+            import { orb } from "./js/anim.js";
+            orb();
+        </script>
+    </body>
+</html>
