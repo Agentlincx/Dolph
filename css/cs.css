@@ -31,7 +31,7 @@ div, a {
     scrollbar-width: none;
 }
 
-
+/*
 @media only screen and (orientation: landscape) {
   video {
     width: 100vw !important;
@@ -44,6 +44,7 @@ div, a {
     height: 100vh !important;
   }
 }
+*/
 
 
 /*medium*/
@@ -80,7 +81,7 @@ div, a {
     }
 
     #yy {
-        height: 150vh !important;
+        
     }
 
     #tok>div {
@@ -144,7 +145,7 @@ div, a {
 #snav, #lnav {
     font-size: 1rem;
     padding: 1em;
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
@@ -179,6 +180,10 @@ div, a {
     position: fixed;
     right: 0;
     margin-right: 1.5em;
+}
+
+#lnav>#nav>div:nth-child(2) {
+  z-index: 5;
 }
 
 #snav>#nav>div:nth-child(2)>span, #smnav>#mav>div:nth-of-type(2)>span {
@@ -316,11 +321,21 @@ div, a {
 }
 
 video {
+  
     position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: fill;
 }
 
 #lnav>#nav>div:nth-child(2) {
@@ -418,10 +433,9 @@ canvas {
 
 
 #p1 {
-    height: 100vh !important;
-    padding: 0 3em;
+    padding: 6em 3em;
     font-size: 1rem;
-    background-color: red;
+    position: relative;
 }
 
 #p1 img {
